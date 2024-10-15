@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 from sklearn import metrics
 
-knn = neighbors.KNeighborsClassifier(n_neighbors=64) #Optimal KNN size is # of neighbors. Square root of sample size. Here, sqrt(4140) = 64 neighbors. Optimum number of neighbors we should use. 
+knn = neighbors.KNeighborsClassifier(n_neighbors=11) #Optimal KNN size is # of neighbors. Square root of sample size. Here, sqrt(4140) = 64 neighbors. Optimum number of neighbors we should use. 
 with open('../DataFiles/dataset_small.pkl', 'rb') as file: #If this is a file we can open, procees (Meaning no restrictions). 'rb' means read binary
     data = pickle.load(file, encoding='latin1')
 x, y = data
@@ -42,7 +42,7 @@ TN = np.sum(np.logical_and(yhat == 1, y == 1))      # True Negative
 FP = np.sum(np.logical_and(yhat == -1, y == 1))     # False Positive
 FN = np.sum(np.logical_and(yhat == 1, y == -1))     # False Negative
 print('TP: ' + str(TP) + ", FP: " + str(FP))
-print('TN: ' + str(TN) + ", FN: " + str(FN))
+print('FN: ' + str(FN) + ", TN: " + str(TN))
 
 confusionMatrix = metrics.confusion_matrix(yhat, y)
 
