@@ -19,6 +19,6 @@ MAXN = 700
 fig = plt.figure()
 fig.set_size_inches(5,5)
 plt.plot(1.25*np.random.rand(MAXN, 1), 1.25*np.random.rand(MAXN,1),'r.',alpha=0.3)
-plt.plot(8+1.5*np.random.rand(MAXN, 1), 5+1.5*np.random.rand(MAXN,1),'r.',alpha=0.3)
-plt.plot(5+1.5*np.random.rand(MAXN, 1), 5+1.5*np.random.rand(MAXN,1),'r.',alpha=0.3)
+plt.plot(8+1.5*np.random.rand(MAXN, 1), 5+1.5*np.random.rand(MAXN,1),'b.',alpha=0.3)
+plt.plot(5+1.5*np.random.rand(MAXN, 1), 5+1.5*np.random.rand(MAXN,1),'g.',alpha=0.3)
 plt.show()
