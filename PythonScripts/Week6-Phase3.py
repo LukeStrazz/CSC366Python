@@ -40,7 +40,7 @@ for i in range(10):
     acc_r[i][1] = metrics.accuracy_score(yhat_nn3, Y_test)
     acc_r[i][2] = metrics.accuracy_score(yhat_svc, Y_test)
     acc_r[i][3] = metrics.accuracy_score(yhat_dt, Y_test)
-    
+print('Accuracy Matrix: \n' + str(acc_r) + '\n')
 plt.boxplot(acc_r)
 for i in range(4):
     xderiv = (i+1)*np.ones(acc_r[:,1].shape) + (np.random.rand(10,)-0.5)*0.1
