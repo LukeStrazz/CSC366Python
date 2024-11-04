@@ -19,7 +19,7 @@ plt.rc('ytick', labelsize=10)
 plt.rc('font', size=12) 
 
 
-data = pd.read_csv("../DataFiles/ACCIDENTS_GU_BCN_20131.csv", encoding='latin-1')
+data = pd.read_csv("../../DataFiles/ACCIDENTS_GU_BCN_20131.csv", encoding='latin-1')
 print(data.columns)
 #Create a new column which is the date
 data['Date'] = '2013-'+data['Month of the year'].apply(lambda x : str(x)) + '-' +  data['Day of month'].apply(lambda x : str(x))

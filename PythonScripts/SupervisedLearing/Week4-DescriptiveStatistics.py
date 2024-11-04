@@ -2,7 +2,7 @@ import numpy as np
 import scipy.stats as stats
 import matplotlib.pyplot as plt
 
-file = open('../DataFiles/ACCIDENTS_GU_BCN_2010.csv', 'r')
+file = open('../../DataFiles/ACCIDENTS_GU_BCN_2010.csv', 'r')
 
 data = np.random.normal(100, 15, size=100)
 mean_estimate = np.mean(data)

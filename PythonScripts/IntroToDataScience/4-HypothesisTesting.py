@@ -8,7 +8,7 @@ import random
 #Hypothesis testing
 #Testing hypotheses using confidence intervals.
 
-data = pd.read_csv("../DataFiles/ACCIDENTS_GU_BCN_20101.csv", encoding='latin-1')
+data = pd.read_csv("../../DataFiles/ACCIDENTS_GU_BCN_20101.csv", encoding='latin-1')
 #Create a new column which is the date
 data['Date'] = data['Day of month'].apply(lambda x : str(x)) + '-' +  \
                data['Month of the year'].apply(lambda x : str(x))

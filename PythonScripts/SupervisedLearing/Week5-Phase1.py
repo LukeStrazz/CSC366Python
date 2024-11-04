@@ -7,7 +7,7 @@ import numpy as np
 from sklearn import metrics
 
 knn = neighbors.KNeighborsClassifier(n_neighbors=11) #Optimal KNN size is # of neighbors. Square root of sample size. Here, sqrt(4140) = 64 neighbors. Optimum number of neighbors we should use. 
-with open('../DataFiles/dataset_small.pkl', 'rb') as file: #If this is a file we can open, procees (Meaning no restrictions). 'rb' means read binary
+with open('../../DataFiles/dataset_small.pkl', 'rb') as file: #If this is a file we can open, procees (Meaning no restrictions). 'rb' means read binary
     data = pickle.load(file, encoding='latin1')
 x, y = data
 x_shape = None

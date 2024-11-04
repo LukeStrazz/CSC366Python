@@ -1,6 +1,6 @@
 import pandas as pd #pip install pandas
 
-file = open('../DataFiles/adult.data', 'r')
+file = open('../../DataFiles/adult.data', 'r')
 
 def chr_int(a):
     if a.isdigit():

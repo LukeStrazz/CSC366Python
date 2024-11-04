@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-edu = pd.read_csv('educ_figdp_1_Data.csv',
+edu = pd.read_csv('../../DataFiles/educ_figdp_1_Data.csv',
 na_values = ':',
 usecols = ["TIME","GEO","Value"])
 print(edu)
