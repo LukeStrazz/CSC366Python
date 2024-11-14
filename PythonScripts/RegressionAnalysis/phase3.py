@@ -84,7 +84,7 @@ jan_model.fit(x_jan, y_jan)
 y_jan_hat = jan_model.predict(x_jan)
 
 plt.figure()
-plt.plot(x_jan, y_jan, '=o', alpha=0.5)
+plt.plot(x_jan, y_jan, '-o', alpha=0.5)
 plt.plot(x_jan, y_jan_hat, 'g', alpha=0.5)
 plt.xlabel('year')
 plt.ylabel('extent')
