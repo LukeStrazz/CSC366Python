@@ -90,3 +90,8 @@ plt.xlabel('year')
 plt.ylabel('extent')
 plt.show()
 
+X_2025 = np.array([2025]).reshape(-1, 1)
+y_hat_2025 = est.predict(X_2025)
+j=1
+y_hat = (y_hat_2025 * month_means.mean()/100) + month_means[j]
+print("Prediction of extent for January 2025 (in millions of square km): ", y_hat_2025)
